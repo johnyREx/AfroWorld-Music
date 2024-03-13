@@ -1,0 +1,24 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}AfroWorld Music{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header and navigation bar -->
+    <header>
+        <!-- Header content -->
+    </header>
+    <!-- Main content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
+
